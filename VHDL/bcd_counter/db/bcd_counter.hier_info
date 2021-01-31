@@ -1,0 +1,119 @@
+|bcd_counter
+Clk => freq_divider:divISeur.Clk
+raz_n => freq_divider:divISeur.raz_n
+raz_n => counter:count.raz_n
+segment[0] <= segments:sev_seg.segment[0]
+segment[1] <= segments:sev_seg.segment[1]
+segment[2] <= segments:sev_seg.segment[2]
+segment[3] <= segments:sev_seg.segment[3]
+segment[4] <= segments:sev_seg.segment[4]
+segment[5] <= segments:sev_seg.segment[5]
+segment[6] <= segments:sev_seg.segment[6]
+
+
+|bcd_counter|freq_divider:divISeur
+clk => sig_clk_1hz.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+raz_n => sig_clk_1hz.ACLR
+raz_n => count[0].ACLR
+raz_n => count[1].ACLR
+raz_n => count[2].ACLR
+raz_n => count[3].ACLR
+raz_n => count[4].ACLR
+raz_n => count[5].ACLR
+raz_n => count[6].ACLR
+raz_n => count[7].ACLR
+raz_n => count[8].ACLR
+raz_n => count[9].ACLR
+raz_n => count[10].ACLR
+raz_n => count[11].ACLR
+raz_n => count[12].ACLR
+raz_n => count[13].ACLR
+raz_n => count[14].ACLR
+raz_n => count[15].ACLR
+raz_n => count[16].ACLR
+raz_n => count[17].ACLR
+raz_n => count[18].ACLR
+raz_n => count[19].ACLR
+raz_n => count[20].ACLR
+raz_n => count[21].ACLR
+raz_n => count[22].ACLR
+raz_n => count[23].ACLR
+raz_n => count[24].ACLR
+clk_1hz <= sig_clk_1hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_counter|counter:count
+clk_1hz => var_num[0].CLK
+clk_1hz => var_num[1].CLK
+clk_1hz => var_num[2].CLK
+clk_1hz => var_num[3].CLK
+raz_n => var_num[0].ACLR
+raz_n => var_num[1].ACLR
+raz_n => var_num[2].ACLR
+raz_n => var_num[3].ACLR
+numbers[0] <= var_num[0].DB_MAX_OUTPUT_PORT_TYPE
+numbers[1] <= var_num[1].DB_MAX_OUTPUT_PORT_TYPE
+numbers[2] <= var_num[2].DB_MAX_OUTPUT_PORT_TYPE
+numbers[3] <= var_num[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_counter|segments:sev_seg
+numbers[0] => Mux0.IN19
+numbers[0] => Mux1.IN19
+numbers[0] => Mux2.IN10
+numbers[0] => Mux3.IN19
+numbers[0] => Mux4.IN10
+numbers[0] => Mux5.IN10
+numbers[0] => Mux6.IN19
+numbers[1] => Mux0.IN18
+numbers[1] => Mux1.IN18
+numbers[1] => Mux2.IN9
+numbers[1] => Mux3.IN18
+numbers[1] => Mux4.IN9
+numbers[1] => Mux5.IN9
+numbers[1] => Mux6.IN18
+numbers[2] => Mux0.IN17
+numbers[2] => Mux1.IN17
+numbers[2] => Mux2.IN8
+numbers[2] => Mux3.IN17
+numbers[2] => Mux4.IN8
+numbers[2] => Mux5.IN8
+numbers[2] => Mux6.IN17
+numbers[3] => Mux0.IN16
+numbers[3] => Mux1.IN16
+numbers[3] => Mux3.IN16
+numbers[3] => Mux6.IN16
+segment[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segment[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

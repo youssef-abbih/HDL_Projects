@@ -1,0 +1,35 @@
+|multiplication
+a[0] => Mult0.IN3
+a[1] => Mult0.IN2
+a[2] => Mult0.IN1
+a[3] => Mult0.IN0
+b[0] => Mult0.IN7
+b[1] => Mult0.IN6
+b[2] => Mult0.IN5
+b[3] => Mult0.IN4
+x[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[0] => Mult1.IN3
+c[1] => Mult1.IN2
+c[2] => Mult1.IN1
+c[3] => Mult1.IN0
+d[0] => Mult1.IN7
+d[1] => Mult1.IN6
+d[2] => Mult1.IN5
+d[3] => Mult1.IN4
+y[0] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+
+

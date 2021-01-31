@@ -1,0 +1,47 @@
+# do multiplication.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplication
+# 
+# Top level modules:
+# 	multiplication
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplication_vlg_sample_tst
+# -- Compiling module multiplication_vlg_check_tst
+# -- Compiling module multiplication_vlg_vec_tst
+# 
+# Top level modules:
+# 	multiplication_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.multiplication_vlg_vec_tst 
+# Loading work.multiplication_vlg_vec_tst
+# Loading work.multiplication
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading work.multiplication_vlg_sample_tst
+# Loading work.multiplication_vlg_check_tst
+# ERROR! Vector Mismatch for output port x[0] :: @time = 999111.000 ps
+#      Expected value = 00000000
+#      Real value = 00001001
+# ERROR! Vector Mismatch for output port x[3] :: @time = 999111.000 ps
+#      Expected value = 00000000
+#      Real value = 00001001
+# ERROR! Vector Mismatch for output port x[4] :: @time = 1000470.000 ps
+#      Expected value = 00000000
+#      Real value = 00010000
+# ERROR! Vector Mismatch for output port x[2] :: @time = 1025875.000 ps
+#      Expected value = 00000000
+#      Real value = 00100100
+# ERROR! Vector Mismatch for output port x[5] :: @time = 1025875.000 ps
+#      Expected value = 00000000
+#      Real value = 00100100
+# ERROR! Vector Mismatch for output port x[6] :: @time = 1040943.000 ps
+#      Expected value = 00000000
+#      Real value = 01000000
+# ERROR! Vector Mismatch for output port x[7] :: @time = 1081666.000 ps
+#      Expected value = 00000000
+#      Real value = 10010000
+#           7 mismatched vectors : Simulation failed !
+# ** Note: $finish    : multiplication.vt(439)
+#    Time: 20 us  Iteration: 0  Instance: /multiplication_vlg_vec_tst/tb_out
